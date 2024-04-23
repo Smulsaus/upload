@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="icon" href="contact-afbeelding.png" type="image/icon type">
+  <link rel="stylesheet" type="text/css" href="../css/contactsinan.css">
+</head>
+<body style="background-color: #747474; font-family: 'Impact', sans-serif;">
+  <hr> 
+  <br>
+  <h2 style="text-align: center; border:5px solid tomato; border-radius: 80px; width: 80%; margin: auto;">Smoelenboek</h2>
+  <p style="text-align: center;">Hier Onder kan je de knoppen klikken</p>
+
+  <ul style="text-align:center;">
+    <li><a href="./index-sinan.html">Home</a></li>
+    <li><a href="./wie.html">Wie</a></li>
+    <li><a href="./contact-sinan.html">Contact<</a></li>
+    <li><a href="../index.html">hub</a></li>
+  </ul>
+
+  <div sytle="text-align: center">
+      <br>
+      <br>
+      <table style="text-align: center;">
+          <br>
+          <tr>
+            <th>Email</th>
+          </tr>
+          <br>
+          <tr>
+            <td><a href="mailto: Sinan.Ulusoy@Student.GildeOpleidingen.nl">Sinan.Ulusoy@Student.GildeOpleidingen.nl</a></td>
+          </tr>
+      </table>
+      <br>
+      <table style="text-align: center;">
+          <tr>
+              <th>Telefoon Nummer</th>
+          </tr>
+          <tr>
+              <td><a href="tel:0636051414">0636051414</a></td>
+          </tr>
+      </table>
+      <br>
+      <table style="text-align: center;">
+          <tr>
+              <th>Kantoor Nummer</th>
+          </tr>
+          <tr>
+              <td>B109</td>
+          </tr>
+      </table>
+  </div>
+  <div style="line-height:1155%;">
+      <br>
+  </div>
+  <img src="../photos/home.png" width="100" height="90">
+  <img src="../photos/vraagteken.png" width="130" height="90">
+  <img src="../photos/contact-selecteerd.png" width="100" height="90">
+  
+  <hr>
+
+  <script>
+    document.onkeydown = function(e){
+    e = e || window.event;
+    var key = e.which || e.keyCode;
+    /* toetsen voor wie.html */
+    if(key===50){
+      wie();
+    }
+    if(key===40){
+      wie();
+    }
+    if(key===98){
+      wie();
+    }
+
+    /* toetsen voor home.html */
+    if(key===49){
+      home();
+    }
+    if(key===35){
+      home();
+    }
+    if(key===97){
+      home();
+    }
+
+    /* pijltjes */
+    if(key===37){
+      wie();
+    }
+    }
+
+    function wie() {
+      window.open("wie.html", "_self")
+    }
+
+    function home() {
+      window.open("inedx-sinan.html", "_self")
+    }
+  </script>
+
+</body>
+</html>

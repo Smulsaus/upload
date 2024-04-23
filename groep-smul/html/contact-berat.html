@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/smoelenboek.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>smoelenboek</title>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <a href="./index-berat.html" class="button" style="font-family: Copperplate, Papyrus, fantasy;">Home</a>
+        <a href="#contact" class="button" style="font-family: Copperplate, Papyrus, fantasy;">Contact ↓</a>
+        <a href="../php/comment.php" class="button" style="font-family: Copperplate, Papyrus, fantasy;">Feedback</a>
+        <a href="../index.html" class="button" style="font-family: Copperplate, Papyrus, fantasy;">Hub</a>
+        <i class="fa fa-university" aria-hidden="true" style="float: right; margin-right: 10px; color: aliceblue; font-size: 50px;"></i>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
+
+    <section>
+        <div class='air air1'></div>
+     
+        <br>
+        <div class="card" style="color: aliceblue;font-size: 30px;text-align: center;font-family: Copperplate, Papyrus, fantasy;">
+            <h1>Berat Ozturk</h1>
+            <p class="title">Software Development</p>
+            <a href="https://www.google.com/maps/search/?q=Gilde+Bredeweg" target="_blank"
+                style="text-decoration: underline; font-size: 35px; color: white;">Gilde Bredeweg</a>
+
+            <div style="margin: 24px 0;">
+                <a href="mailto:Berat.Ozturk@student.gildeopleidingen.nl"><i class="fa fa-envelope"></i></a>
+                <a href="tel:0638548132"><i class="fa fa-phone"></i></a>
+            </div>
+
+            <p style="font-family: Copperplate, Copperplate Gothic Light, fantasy;"><button>Contact</button></p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="icon" href="../photos/home.png" type="image/icon type">
+  <link rel="stylesheet" type="text/css" href="../css/homesinan.css">
+</head>
+<body style="background-color: #747474; font-family: 'Impact', sans-serif;">
+
+  <hr>
+  <br>
+  <h2 style="text-align: center; border:5px solid tomato; border-radius: 80px; width: 80%; margin: auto;">Smoelenboek</h2>
+
+  <p style="text-align: center;">Hier Onder kan je de knoppen klikken</p>
+
+  <ul style="text-align:center;">
+    <li><a href="./index-sinan.html">Home <</a></li>
+    <li><a href="./wie.html">Wie</a></li>
+    <li><a href="./contact-sinan.html">Contact</a></li>
+    <li><a href="../index.html">hub</a></li>
+  </ul>
+
+  <h1 style="text-align: center;">Dit is de Home Pagina</h1>
+
+  <div style="text-align: center;">
+    <div style="background-color: #a1a1a1; font-size: larger; width: 30%; margin: auto; padding: 10px;">
+      Dit is mijn Smoelenboek.<br>
+      Je kan kiezen uit: <br>
+      | toetsen van 1 tot 3 | <br>
+      | Pijltjes | <br>
+      | Of de knoppen die hier boven staan | <br>
+      Om naar de andere onderdelen te komen <br>
+      van mijn Smoelenboek <br>
+    </div>
+  </div>
+
+  <div class="palette" style="border:5px solid tomato; border-radius: 80px; width: 10%; background-color: #4b4b4b; text-align: center; height: 100px;">
+    <div class="color"><span>Sinan Ulusoy</span></div>
+  </div>
+
+  <div style="line-height:425%;">
+    <br>
+  </div>
+
+  <img src="../photos/home-selecteerd.png" width="100" height="90">
+  <img src="../photos/vraagteken.png" width="130" height="90">
+  <img src="../photos/contact-afbeelding.png" width="100" height="90">
+
+  <hr>
+
+  <script>
+    document.onkeydown = function(e){
+    e = e || window.event;
+    var key = e.which || e.keyCode;
+    /* toetsen voor wie.html */
+    if(key===50){
+      wie();
+    }
+    if(key===40){
+      wie();
+    }
+    if(key===98){
+      wie();
+    }
+
+    /* toetsen voor contact.html */
+    if(key===51){
+      contact();
+    }
+    if(key===34){
+      contact();
+    }
+    if(key===99){
+      contact();
+    }
+
+    /* pijltjes */
+    if(key===39){
+      wie();
+    }
+    }
+
+    function wie() {
+      window.open("wie.html", "_self")
+    }
+
+    function contact() {
+      window.open("contact-sinan.html", "_self")
+    }
+  </script>
+  
+</body>
+</html>

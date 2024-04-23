@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background-image: url('../photos/black-fog-or-smoke-color-isolated-background-for-effect-free-photo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-size:cover;
+  -webkit-animation: slidein 5s;
+  animation: slidein 5 s;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;   
+}
+
+@-webkit-keyframes slidein {
+  from {background-position: top; background-size:3000px; }
+  to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+  from {background-position: top;background-size:3000px; }
+  to {background-position: -100px 0px;background-size:2750px;}
+}
+
+.content {
+  margin-top: 146px; /* Adjust the margin to place the content lower on the page */
+  text-align: center;
+}
+
+.flip-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 10px;
+  border-radius: 80px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-inner a {
+  z-index: 9999;
+}
+.flip-card-inner a {
+  position: absolute;
+  top: 50%; /* Adjust the top position as needed */
+  left: 50%; /* Adjust the left position as needed */
+  transform: translate(-50%, -50%);
+}
+
+.flip-card-inner a {
+  pointer-events: auto;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-inner {
+  overflow: visible; /* or other suitable value */
+}
+
+.flip-card-front, .flip-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: rgb(42, 40, 48);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-front img,
+.flip-card-back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover; /* Ensure the image covers the entire front side */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 70%; /* Adjust the top position as needed */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  z-index: 1; /* Ensure the text appears above the pseudo-element */
+  font-size: 13px;
+}
+
+.flip-card-front img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: brightness(100%) contrast(120%); /* Adjust brightness and contrast of the image */
+}
+
+.flip-card-front::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.8) 100%); /* Gradient for vignette effect */
+  border-radius: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(72, 65, 88);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Copperplate, Papyrus, fantasy;
+  cursor: pointer; /* Ensure the button cursor appears on hover */
+}
+
+.button:hover {
+  background-color: rgb(100, 89, 126);
+}
+
+.flip-card-anan {
+  background-color: transparent;
+  width: 70px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 10px;
+  border-radius: 80px;
+}
+
+
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+h2 {
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Form styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Comments section styles */
+
+
+
+/* Footer styles */
+
+
+
+.fd-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.fd-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(58, 54, 68);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Copperplate, Papyrus, fantasy;
+  cursor: pointer; /* Ensure the button cursor appears on hover */
+}
+
+.fb-button:hover {
+  background-color: rgb(100, 89, 126);
+}
+.fb-button {
+  position: absolute;
+  top: 60px; /* Adjust this value to position it under fd-button */
+  right: 10px;
+}
+
+.fb-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(58, 54, 68);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Copperplate, Papyrus, fantasy;
+  cursor: pointer; /* Ensure the button cursor appears on hover */
+}
+
+.fb-button:hover {
+  background-color: rgb(100, 89, 126);
+}
+
+h2 {
+color: #f0f0f0;
+
+}
+
+
+.comment-section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(58, 54, 68);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.comment {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  background-color: #9355acd7;
+}
+
+.comment h4 {
+  margin: 0 0 10px;
+}
+
+.comment p {
+  margin: 0;
+}
+
+.comment-form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.upload-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.upload-message {
+  margin-top: 10px;
+}
+
+/* upload code*/
+body {
+   
+  height: 80vh;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+.section h2{
+  color: #f9f9f9;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+.section form {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(58, 54, 68);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #464646;
+}
+
+.logout-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(72, 65, 88);
+  color: #fff; /* White text color */
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: Copperplate, Papyrus, fantasy;
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
+
+.logout-btn:hover {
+  background-color: #cc0000; /* Darker red when hovering */
+}

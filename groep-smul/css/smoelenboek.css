@@ -1,0 +1,260 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #304055;;
+    overflow: hidden;
+    height: 80px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 40px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.navbar a.active {
+    background-color: #2d3849;
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+    float: right;
+    cursor: pointer;
+    padding: 14px 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a:not(.icon) {
+        display: none;
+    }
+
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        display: block;
+        text-align: left;
+    }
+}
+
+
+    /* wave background */
+    html {
+      --u:  2vmin;
+    --c1: #567bac;
+      --c2: #476994;
+      --c3: #3b526e;
+      --c4: #304055;
+      --gp: 50%/ calc(var(--u) * 10) calc(var(--u) * 10);
+      height: 100vh;
+    background:
+      conic-gradient(from 119deg at 56% 76%, var(--c2) 0 66deg, var(--c4) 0 128deg, #fff0 0 360deg) var(--gp),  		
+      conic-gradient(from 186deg at 8% 25.25%, var(--c4) 0 65deg, var(--c3) 0 157deg, #fff0 0 360deg) var(--gp),
+      conic-gradient(from -45deg at 50% 50%, var(--c4) 0 49.5deg, var(--c2) 0 90deg, var(--c3) 0 111.25deg, var(--c4) 0 180.1deg, #fff0 0 212deg, var(--c3) 0 270deg, var(--c2) 0 345.5deg,  #fff0 0 360deg) var(--gp), 
+      var(--c1);
+  }
+
+  
+
+
+  h1 {
+      display: flex;
+      justify-content: center;
+      color: white;
+      font-size: 40px;
+  }
+
+  .geeks {
+    width: 333px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    background: #3b4d69c5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px; /* Add padding to create space between the box and the image */
+    box-shadow: 0 10px 8px #dbe0e9c5; /* Adjust shadow properties as needed */
+}
+
+
+  .geeks::after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      background: rgb(43, 42, 42);
+      width: 90%;
+      height: 4px;
+      left: 3%;
+      border-radius: 50%;
+      filter: blur(3px);
+  }
+  
+  .geeks img {
+    width: 90%; /* Adjust the width of the image within the box */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally within the box */
+    border-radius:5px;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.comment-section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #333;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  background-color: #3c4f68;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+
+
+.comment-section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(62, 83, 110, 0.87);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+
+.comment {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  background-color: #4e70acd7;
+}
+
+.comment h4 {
+  margin: 0 0 10px;
+}
+
+.comment p {
+  margin: 0;
+}
+
+.comment-form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}

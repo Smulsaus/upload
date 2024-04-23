@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wie Ben Ik?</title>
+  <link rel="icon" href="man-denkt.png" type="image/icon type">
+  <link rel="stylesheet" type="text/css" href="../css/wie.css">
+</head>
+<body style="background-color: #747474; font-family: 'Impact', sans-serif;">
+  <hr>
+  <br>
+  <h2 style="text-align: center; border:5px solid tomato; border-radius: 80px; width: 80%; margin: auto;">Smoelenboek</h2>
+  <p style="text-align: center;">Hier Onder kan je de knoppen klikken</p>
+
+
+  <ul style="text-align:center;">
+    <li><a href="./index-sinan.html">Home</a></li>
+    <li><a href="./wie.html">Wie<</a></li>
+    <li><a href="./contact-sinan.html">Contact</a></li>
+    <li><a href="../index.html">hub</a></li>
+  </ul>
+  <h1 style="color:darkgoldenrod; text-align:center;">Wie ben ik?</h1>
+  <div style="text-align: center;">
+    <img src="foto.jpg" height="140" style="border: 5px solid black;">
+    <pre style="background-color: rgb(100, 100, 100); font-size: larger;">
+      Ik ben Sinan Ulusoy en ik ben 17 jaar oud. Ik 
+      zit momenteel bij GildeOpleidingen. mijn
+      hobby's zijn naar buiten gaan met vrienden.
+      Ik zat op College Den Hulster en deed vmbo-gt.
+    </pre>
+  </div>
+
+
+  <div sytle="text-align: center">
+    <table style="text-align: center;">
+        <tr>
+            <th>Geboorte Datum</th>
+        </tr>
+        <tr>
+            <td>15/09/2006</td>
+        </tr>
+    </table>
+  </div>
+  <div style="line-height:1005%;">
+    <br>
+  </div>
+  <img src="../photos/home.png" width="100" height="90">
+  <img src="../photos/vraagteken-selecteerd.png" width="130" height="90">
+  <img src="../photos/contact-afbeelding.png" width="100" height="90">
+  
+  <hr>
+
+  <script>
+    document.onkeydown = function(e){
+    e = e || window.event;
+    var key = e.which || e.keyCode;
+    /* toetsen voor home.html */
+    if(key===49){
+      home();
+    }
+    if(key===35){
+      home();
+    }
+    if(key===97){
+      home();
+    }
+
+    /* toetsen voor contact.html */
+    if(key===51){
+      contact();
+    }
+    if(key===34){
+      contact();
+    }
+    if(key===99){
+      contact();
+    }
+
+    /* pijltjes */
+    if(key===37){
+      home();
+    }
+
+    if(key===39){
+      contact();
+    }
+    }
+
+    function home() {
+      window.open("index-sinan.html", "_self")
+    }
+
+    function contact() {
+      window.open("contact-sinan.html", "_self")
+    }
+  </script>
+
+</body>
+</html>
